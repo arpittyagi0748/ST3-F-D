@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight on planets calculator</title>
+    <link rel = "icon" href = 
+"https://media.istockphoto.com/photos/solar-system-picture-id482954331?k=20&m=482954331&s=612x612&w=0&h=8-GpwUiZuG07-64w0FXyKpyee18sviu2XXMLJd3_mZ8=" 
+        type = "image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/newcss.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pics\sky-earth-space-working.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#planets-container">Planets</a></li>
+          
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to weight calculator</h1>
+        <p>The mass of an object is the same on any planet but the
+            object’s weight changes because gravity is different on different planets. </p>
+        <br></br>
+        <button class="btn" onclick="fnClick()">Enter weight</button>
+        <input class="inp hide" type="text">
+    </section>
+
+    <section id="planets-container">
+        <h1 class="h-primary center">Planets</h1>
+        <div id="planets">
+            <div class="box">
+                <img src="https://images.pexels.com/photos/12498795/pexels-photo-12498795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h2 class="h-secondary center">Mercury</h2>
+                <p class="center"> Mercury is the closest planet to the Sun but, perhaps surprisingly, it does not have
+                    the highest temperatures. It is the second densest planet of the Solar System, but also the smallest
+                    planet. The structure of Mercury makes it the most similar planet to Earth.
+                    Your weight on Mercury would be 38% of your weight on Earth as Mercury has a gravity of 3.7 m/s²,
+                    while Earth has 9.807 m/s².</p>
+                <button class="btn" onclick="weightcalcm()">Calculate weight</button>
+                <b><p class="res"></p></b>
+            </div>
+            <div class="box">
+                <img src="https://images.pexels.com/photos/12498793/pexels-photo-12498793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <h2 class="h-secondary center">Venus</h2>
+                <p class="center">Venus is the second planet from the Sun and the sixth-largest. Together with Mercury, they are the only planets without a satellite, even though Mercury is closer to the sun, Venus is the hottest planet.
+                    The surface gravity on Venus is about 91% of the surface gravity on Earth, so if you weigh 100 pounds on Earth, you would weigh 91 pounds on Venus.
+                </p>
+                    <button class="btn" onclick="weightcalcv()">Calculate weight</button>
+                <b><p class="res2"></p></b>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="">
+                <h2 class="h-secondary center">Mars</h2>
+                <p class="center">Mars is the fourth planet from the Sun and the second-smallest planet with a thin atmosphere, having the surface features reminiscent both of the impact craters of the Moon, and the valleys, deserts and polar ice caps of Earth. It is the most widely searched planet for life.
+                    The gravity on Mars is about 38% of Earth’s gravity.
+                </p>
+                <button class="btn" onclick="weightcalcm2()">Calculate weight</button>
+                <b><p class="res3"></p></b>
+            </div>
+        </div>
+        <div id="planets">
+            <div class="box">
+                <img src="http://cdn.spacetelescope.org/archives/images/screen/heic2017a.jpg" alt="">
+                <h2 class="h-secondary center">Jupiter</h2>
+                <p class="center">Jupiter is the fifth planet from the Sun and the largest planet of the Solar System. It is the oldest planet of the Solar System thus it was the first to take shape out of the remains of the solar nebula.
+                    The gas giant has a gravity of 24.79 m/s², a little more than twice of Earth. Its powerful gravity has been used to hurl spacecraft into the farthest regions of the solar system.
+                    </p>
+                    <button class="btn" onclick="weightcalcj()">Calculate weight</button>
+                <b><p class="res4"></p></b>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2F0dXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                <h2 class="h-secondary center">Saturn</h2>
+                <p class="center">Saturn is the sixth planet from the Sun, with the largest planetary rings in the Solar System. It is the second-largest planet after Jupiter, and recently, with many other moons being discovered, it surpassed the number of Jupiter’s moons and is now considered the planet with the most numerous satellites.
+                    The surface gravity on Saturn is about 106% of the surface gravity on Earth.
+                </p>
+                    <button class="btn" onclick="weightcalcs()">Calculate weight</button>
+                <b><p class="res5"></p></b>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/photos/planet-uranus-picture-id1227245892?k=20&m=1227245892&s=612x612&w=0&h=WQCmqqCFFl5oX_X6PtrCMQgf1HRcYVubPzexrXjtvGc=" alt="">
+                <h2 class="h-secondary center">Uranus</h2>
+                <p class="center">
+                    Uranus is the seventh planet discovered in the Solar System that also led to the discovery of the last planet, Neptune they are both referred to as ice giants. Officially recognized in 1781 after many observations in the past, it is the third-largest planet of the Solar System.
+                    The gravity on Uranus is about 8.87 m/s² or around 86% of the surface gravity on Earth which is 9.807 m/s².
+                </p>
+                    <button class="btn" onclick="weightcalcu()">Calculate weight</button>
+                    <b><p class="res6"></p></b>
+            </div>
+        </div>
+        <div id="planets">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuEuDAvlfmxKOWYD5jCjNMAERf_qiVYjqaOgYy5grtNg&s" alt="">
+                <h2 class="h-secondary center">Neptune</h2>
+                <p class="center">Neptune is the fourth largest and the farthest planet of the Solar System with the most powerful wind speeds out of all the planets. It is the smallest of the gas giants and is the first planet to be discovered by mathematical predictions in 1846.
+                    The surface gravity on Neptune is about 119% of the surface gravity on Earth, so if you weigh 100 pounds on Earth, you would weigh 119 pounds on Neptune.
+                </p>
+                    <button class="btn" onclick="weightcalcn()">Calculate weight</button>
+                    <b><p class="res7"></p></b>
+            </div>
+            <div class="box">
+                <img src="http://www.nasa.gov/sites/default/files/thumbnails/image/nh_pluto_10.png" alt="">
+                <h2 class="h-secondary center">Pluto</h2>
+                <p class="center">
+                    Pluto is the largest known dwarf planet in the Solar System, discovered in 1930. It was thought to be the 9th planet of our system for 75 years until the discovery of Eris and other similar objects that led to its demotion from a planet to a dwarf planet in 2006.
+                    The surface gravity on Pluto is about 6% of the surface gravity on Earth, so if you weigh 100 pounds on Earth, you would weigh 6 pounds on Pluto.
+                </p>
+                    <button class="btn" onclick="weightcalcp()">Calculate weight</button>
+                    <b><p class="res8"></p></b>
+            </div>
+            <div class="box">
+                <img src="https://images.unsplash.com/photo-1614642264762-d0a3b8bf3700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80" alt="">
+                <h2 class="h-secondary center">Sun</h2>
+                <p class="center">
+                    Our Sun is a normal main-sequence G2 star, one of more than 100 billion stars in our galaxy.The Sun is by far the largest object in the solar system. It contains more than 99.8% of the total mass of the Solar System (Jupiter contains most of the rest).
+                    The surface gravity on Sun is about 2701% of the surface gravity on Earth, so if you weigh 100 pounds on Earth, you would weigh 2701 pounds on Sun.
+                </p>
+                    <button class="btn" onclick="weightcalcsn()">Calculate weight</button>
+                    <b><p class="res9"></p></b>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="center">
+            Copyright &copy; My weight calculator app. All rights reserved!
+        </div>
+    </footer>
+    <script src="JS/new.js"></script>
+</body>
+
+</html>
